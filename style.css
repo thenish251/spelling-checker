@@ -1,0 +1,73 @@
+form {
+  text-align: center;
+}
+#error {
+  display: none;
+  color: red;
+}
+.pre {
+  white-space: pre-wrap;
+  text-align: left;
+  overflow-wrap: break-word;
+  padding: 5%;
+  overflow: visible;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.my-tooltip {
+  color: black !important;
+  border-bottom: 2px solid red;
+  background-color: rgba(220, 20, 60, 0.1);
+  position: relative;
+  display: inline-block;
+}
+
+.my-tooltip-options {
+  padding: 5px 10px;
+}
+
+.my-tooltip-options:hover {
+  color: rgb(185, 221, 223);
+  background-color: #2cb673;
+  cursor: pointer;
+}
+
+.my-tooltip .my-tooltiptext {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(165, 214, 233);
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 10px;
+  font-weight: bold;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.my-tooltip .my-tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.my-tooltip:hover .my-tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

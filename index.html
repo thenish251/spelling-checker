@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Grammarly</title>
+  </head>
+  <body>
+    <div class="container card mt-5">
+      <form class="p-5">
+        <h1 class="text-center mb-5">Spell Checker</h1>
+        <div>
+          <input
+            class="form-control form-control-lg"
+            id="formFileLg"
+            type="file"
+          />
+        </div>
+        <div class="bg-light pt-2 pb-2 mt-2">
+          <pre class="m-1 pre" id="displayText"></pre>
+        </div>
+        <div class="text-center m-5">
+          <button class="btn btn-primary w-25" id="checkButton">Check</button>
+        </div>
+        <div id="error" class="error m-5">
+          No file chosen, please choose a file to upload.
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
